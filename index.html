@@ -8,7 +8,7 @@
         </title>
         <link
             rel="shortcut icon"
-            href="./images/logo-circle.png"
+            href="./images/logo/logo-circle.png"
             type="image/x-icon"
         />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -17,6 +17,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./css/banner.css" />
+        <link rel="stylesheet" href="./css/product.css" />
         <link rel="stylesheet" href="./css/ad.css" />
         <script src="./js/timer.js"></script>
     </head>
@@ -25,7 +26,7 @@
             <div class="nav">
                 <a href="google.com" class="nav__logo">
                     <img
-                        src="./images/logo.jpg"
+                        src="./images/logo/logo.jpg"
                         alt="logo"
                         class="nav__logo--image"
                     />
@@ -44,7 +45,7 @@
                     >Sign Up
                     <img
                         class="nav__item--btn__arrow"
-                        src="./images/right-arrow.png"
+                        src="./images/icons/right-arrow.png"
                         alt=""
                     />
                 </span>
@@ -63,19 +64,59 @@
                     <button>Sign Up Now</button>
                 </div>
                 <div class="banner__container__image">
-                    <!-- <img
-                        src="./images/illustration-big.png"
-                        srcset="
-                            ./images/illustration-mobile.jpg  500w,
-                            ./images/illustration-mobile.jpg 1500w
-                        "
-                    /> -->
-                    <img src="./images/illustration-desktop.jpg" />
+                    <img src="./images/bg/illustration-desktop.jpg" />
                 </div>
             </div>
         </div>
-        <div class="product">
-            <div class="first-product"></div>
+        <div class="products-container">
+            <div class="first-product">
+                <h2>Think Fintech, Think Razorpay</h2>
+                <div class="underscore"></div>
+                <div class="first-product__card-deck">
+                    <div
+                        class="first-product__card-deck__card first-product__card-deck__card-1"
+                    >
+                        <img
+                            src="./images/icons/first-product/accept-payments-icon.svg"
+                            alt=""
+                        />
+                        <h2>Razorpay Payments</h2>
+                        <p>
+                            Accept Payments using Payment Gateway, Payment
+                            Pages, Payment Links and much more.
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div
+                        class="first-product__card-deck__card first-product__card-deck__card-2"
+                    >
+                        <img
+                            src="./images/icons/first-product/x-icon.svg"
+                            alt=""
+                        />
+                        <h2>RazorpayX</h2>
+                        <p>
+                            Simplify, accelerate, and automate every aspect of
+                            your banking operations.
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div
+                        class="first-product__card-deck__card first-product__card-deck__card-3"
+                    >
+                        <img
+                            src="./images/icons/first-product/capital-icon.svg"
+                            alt=""
+                        />
+                        <h2>Razorpay Capital</h2>
+                        <p>
+                            Get payments within 12 working hours & never have a
+                            shortfall of working capital.
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
             <div class="second-product"></div>
             <div class="third-product"></div>
         </div>

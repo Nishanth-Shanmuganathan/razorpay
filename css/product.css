@@ -1,0 +1,78 @@
+.products-container {
+    padding-bottom: 500px;
+}
+
+.first-product h2 {
+    text-align: center;
+    color: #0F2666;
+
+}
+
+.first-product .underscore {
+    margin: auto;
+}
+
+.first-product__card-deck {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-product__card-deck__card {
+    margin: 20px;
+    padding: 20px;
+    width: 315px;
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #07153F;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    transition: transform 300ms;
+}
+
+.first-product__card-deck__card h2,
+.first-product__card-deck__card a {
+    color: rgb(255, 255, 255);
+}
+
+.first-product__card-deck__card p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.first-product__card-deck__card-1 {
+    background-image: url(./../images/bg/first-product/accept-payments-bg.svg);
+}
+
+.first-product__card-deck__card-2 {
+    background-image: url(./../images/bg/first-product/x-bg.svg);
+}
+
+.first-product__card-deck__card-3 {
+    background-image: url(./../images/bg/first-product/capital-bg.svg);
+}
+
+.first-product__card-deck__card:hover {
+    transform: scale(1.05);
+}
+
+.first-product__card-deck__card-1:hover {
+    background-image: url(./../images/bg/first-product/accept-payments-dark-bg.svg);
+}
+
+.first-product__card-deck__card-2:hover {
+    background-image: url(./../images/bg/first-product/x-dark-bg.svg);
+}
+
+.first-product__card-deck__card-3:hover {
+    background-image: url(./../images/bg/first-product/capital.svg);
+}

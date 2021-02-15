@@ -130,7 +130,8 @@ body {
 
 }
 
-.banner__container__content .underscore {
+.banner__container__content .underscore,
+.underscore {
     width: 25px;
     border-bottom: 5px solid rgb(0, 195, 255);
 }
