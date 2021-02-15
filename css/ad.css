@@ -1,0 +1,68 @@
+.ad {
+    width: 100%;
+    height: 50px;
+    background-image: url(./../images/desk-banner.svg);
+    background-size: 110% 100%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    color: #0154A2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 5px 0px 10px black;
+}
+
+.ad__timer {
+    display: flex;
+    align-items: center;
+}
+
+.ad__timer--cover {
+    margin: 10px;
+}
+
+.ad__timer--cover:last-child {
+    padding-right: 20px;
+    border-right: 2px solid #0154a280;
+}
+
+.ad__timer__colon {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ad__timer__count,
+.ad__timer__text {
+    margin: 0px;
+    text-align: center;
+}
+
+.ad__timer__count {
+    font-size: 12px;
+    font-weight: 1000;
+}
+
+.ad__timer__text {
+    font-size: 8px;
+}
+
+.ad__text {
+    margin: auto 10px;
+    padding: 0px 10px;
+    font-size: 16px;
+    font-weight: 1000;
+}
+
+.ad__nav {
+    padding: 0px 20px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #2783f3;
+    align-self: center;
+}
