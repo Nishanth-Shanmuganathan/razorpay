@@ -66,3 +66,23 @@
     background-color: #2783f3;
     align-self: center;
 }
+
+@media (min-width:1023px) {
+    .desktop-view {
+        display: flex;
+    }
+
+    .mobile-view {
+        display: none;
+    }
+}
+
+@media (max-width:1023px) {
+    .desktop-view {
+        display: none;
+    }
+
+    .mobile-view {
+        display: inline-block;
+    }
+}

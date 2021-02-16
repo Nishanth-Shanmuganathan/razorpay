@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    background-color: #F2F3F6;
 }
 
 * {
@@ -20,12 +21,7 @@ body {
     clip-path: polygon(0% 0%, 100% 0%, 100% 92%, calc(100% - 100px) 100%, 0% calc(100% - 100px));
 }
 
-@media (min-width:1100px) {
-    .banner>* {
-        margin: auto;
-        max-width: 1100px;
-    }
-}
+
 
 .nav {
     width: 100%;
@@ -37,6 +33,7 @@ body {
 
 .nav__logo,
 .nav__logo--image {
+    margin: 0 10px;
     width: 125px;
     height: 32px;
 }
@@ -59,9 +56,10 @@ body {
 .nav__item--highlighted__dot {
     width: 10px;
     height: 10px;
+    margin-right: 5px;
     background-color: #bbb;
     border-radius: 50%;
-    display: inline-block;
+    align-self: center;
 }
 
 .nav__item--btn {
@@ -73,7 +71,7 @@ body {
 }
 
 .nav__item--btn__arrow {
-    margin-left: 5px;
+    margin: 5px 0 0 5px;
     width: 10px;
     height: 10px;
 }
@@ -96,7 +94,7 @@ body {
 }
 
 .banner__container__image img {
-    max-width: 600px;
+    max-width: 50vw;
     max-height: 500px;
 }
 
@@ -134,4 +132,49 @@ body {
 .underscore {
     width: 25px;
     border-bottom: 5px solid rgb(0, 195, 255);
+}
+
+
+
+@media (min-width:1023px) {
+    .banner>* {
+        margin: auto;
+        max-width: 1023px;
+
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    .desktop-view {
+        display: none;
+    }
+
+}
+
+@media (max-width:1023px) {
+    .banner__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner__container__content,
+    .banner__container__image {
+        width: 80%;
+    }
+
+    .mobile-view>div {
+        display: inline-block;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    .menu-icon {
+        margin-left: 10px;
+        cursor: pointer;
+        transform: translateY(20%);
+    }
 }

@@ -31,17 +31,47 @@
                         class="nav__logo--image"
                     />
                 </a>
-                <span class="nav__item">Products</span>
-                <span class="nav__item">Develop</span>
-                <span class="nav__item">Resources</span>
-                <span class="nav__item">Support</span>
-                <span class="nav__item">Pricing</span>
-                <div class="nav__item nav__item--highlighted">
+                <span class="nav__item desktop-view">Products</span>
+                <span class="nav__item desktop-view">Develop</span>
+                <span class="nav__item desktop-view">Resources</span>
+                <span class="nav__item desktop-view">Support</span>
+                <span class="nav__item desktop-view">Pricing</span>
+                <div class="nav__item nav__item--highlighted desktop-view">
                     <span class="nav__item--highlighted__dot"></span>
                     We're hiring!
                 </div>
-                <span class="nav__item">Log In</span>
-                <span class="nav__item nav__item--btn"
+                <div class="nav__item mobile-view">
+                    <div class="nav__item nav__item--highlighted">
+                        <span class="nav__item--highlighted__dot"></span>
+                        We're hiring!
+                    </div>
+                    <div class="menu-icon">
+                        <svg viewBox="0 0 100 80" width="20" height="20">
+                            <rect
+                                width="100"
+                                height="12"
+                                rx="8"
+                                fill="white"
+                            ></rect>
+                            <rect
+                                y="30"
+                                width="100"
+                                height="12"
+                                rx="8"
+                                fill="white"
+                            ></rect>
+                            <rect
+                                y="60"
+                                width="100"
+                                height="12"
+                                rx="8"
+                                fill="white"
+                            ></rect>
+                        </svg>
+                    </div>
+                </div>
+                <span class="nav__item desktop-view">Log In</span>
+                <span class="nav__item nav__item--btn desktop-view"
                     >Sign Up
                     <img
                         class="nav__item--btn__arrow"
@@ -117,11 +147,89 @@
                     </div>
                 </div>
             </div>
-            <div class="second-product"></div>
+            <div class="second-product">
+                <div class="second-product__card-deck">
+                    <div class="second-product__card-deck__card">
+                        <h1 class="second-product__title">
+                            New <br />Products <br />Launch
+                        </h1>
+                    </div>
+                    <div
+                        class="second-product__card-deck__card product-card product-card-1"
+                    >
+                        <img
+                            src="./images/icons/second-product/upi-autopay.svg"
+                            alt="upi autoplay"
+                        />
+                        <h3>UPI AutoPay</h3>
+                        <p>
+                            Allow customers to set up recurring payments using
+                            UPI Apps.
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div
+                        class="second-product__card-deck__card product-card product-card-2"
+                    >
+                        <img
+                            src="./images/icons/second-product/payment-buttons.svg"
+                            alt="upi autoplay"
+                        />
+                        <h3>Payment Button</h3>
+                        <p>
+                            Accept payments on your website, in less than 5
+                            minutes. No developer needed.
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div
+                        class="second-product__card-deck__card product-card product-card-3"
+                    >
+                        <img
+                            src="./images/icons/second-product/papernach.svg"
+                            alt="upi autoplay"
+                        />
+                        <h3>CRED Pay</h3>
+                        <p>
+                            Get access to millions of premium customers at zero
+                            marketing cost.
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div
+                        class="second-product__card-deck__card product-card product-card-4"
+                    >
+                        <img
+                            src="./images/icons/second-product/thirdwatch.svg"
+                            alt="upi autoplay"
+                        />
+                        <h3>Thirdwatch</h3>
+                        <p>
+                            Fraud orders, impulse purchases, non-deliverable
+                            addresses - flag risky transactions in real time.
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div
+                        class="second-product__card-deck__card product-card product-card-5"
+                    >
+                        <img
+                            src="./images/icons/second-product/unregistered.svg"
+                            alt="upi autoplay"
+                        />
+                        <h3>Unregistered Businesses</h3>
+                        <p>
+                            Easiest way to accept payments for freelancers,
+                            consultants, homemakers and professionals.
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
             <div class="third-product"></div>
         </div>
         <div class="ad">
-            <div class="ad__timer">
+            <div class="ad__timer desktop-view">
                 <div class="ad__timer--cover">
                     <p class="ad__timer__count" id="day">34</p>
                     <p class="ad__timer__text">Days</p>
@@ -142,9 +250,10 @@
                     <p class="ad__timer__text">Seconds</p>
                 </div>
             </div>
-            <p class="ad__text">
+            <p class="ad__text desktop-view">
                 Unlock Growth this 2021 with 0% Platform Fee for 3 months
             </p>
+            <p class="ad__text mobile-view">Unlock 0% pricing</p>
             <button class="ad__nav">Start Free Trial</button>
         </div>
     </body>
