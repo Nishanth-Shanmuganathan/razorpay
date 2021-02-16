@@ -4928,7 +4928,6 @@ body.open-nav .backdrop {
 #home main .nav-icon {
     float: none;
     display: block;
-    vertical-align: middle;
     margin: 8px auto
 }
 
