@@ -2,13 +2,15 @@
 
 .first-product {}
 
-.first-product h2 {
+.first-product h2,
+.third-product h2 {
     text-align: center;
     color: #0F2666;
 
 }
 
-.first-product .underscore {
+.first-product .underscore,
+.third-product .underscore {
     margin: auto;
 }
 
@@ -80,10 +82,8 @@
 
 .second-product {
     padding: 150px 0px 0px 0px;
-    min-height: 100vh;
-    position: relative;
     background-image: url(./../images/bg/second-product/triangle-bg.svg), url(./../images/bg/second-product/triangle-bg-down.svg);
-    background-position: top left, 100% 200%;
+    background-position: top left, 100% 550px;
     background-size: 700px 700px, 500px 500px;
     background-repeat: no-repeat;
 }
@@ -169,6 +169,116 @@
 }
 
 
+.third-product {
+    padding: 150px 20px 20px 20px;
+    background-image: url(./../images/bg/third-product/triangle-bg-up.svg);
+    background-position: 100% -250px;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+}
+
+.third-product__heading p {
+    margin: 24px auto;
+    width: 50%;
+    color: #82738A;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.third-product__card-deck {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1032px;
+    height: fit-content;
+    display: grid;
+    grid-gap: 4.5%;
+    grid-template-columns: 31.1% 31.1% 31.1%;
+}
+
+.third-product__card-deck .card {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px rgba(192, 192, 192, 0.205);
+    transition: all 200ms;
+}
+
+.third-product__card-deck .card h3 {
+    color: #0F2666;
+}
+
+.third-product__card-deck .card p {
+    color: #82738A;
+}
+
+.third-product__card-deck a {
+    font-family: inherit;
+    text-decoration: none;
+    color: #518FF0;
+}
+
+.third-product__card-deck .card:hover {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.third-product__card-deck .card-1::after {
+    background: url(./../images/bg/third-product/product-core.svg);
+}
+
+.third-product__card-deck .card-2::after {
+    background: url(./../images/bg/third-product/paymentpages.png);
+    background-size: 70%;
+}
+
+.third-product__card-deck .card-3::after {
+    background: url(./../images/bg/third-product/product-paymentlinks.svg);
+}
+
+.third-product__card-deck .card-4::after {
+    background: url(./../images/bg/third-product/product-subscriptions.svg);
+}
+
+.third-product__card-deck .card-5::after {
+    background: url(./../images/bg/third-product/product-smartcollect.svg);
+}
+
+.third-product__card-deck .card-6::after {
+    background: url(./../images/bg/third-product/product-route.svg);
+}
+
+.third-product__card-deck .card::after {
+    content: "";
+    display: inline-block;
+    padding: 40px;
+    width: 75%;
+    height: 72%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 200ms;
+    visibility: hidden;
+    box-shadow: 1px 1px 5px rgba(192, 192, 192, 0.205);
+    background-color: #EEF8FE;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+
+.third-product__card-deck .card:hover::after {
+    visibility: visible;
+    transform: scale(1.25, 1.15);
+}
+
+
+
+
 @media (min-width:1023px) {
     .product-card-1:hover {
         background: url(./../images/bg/second-product/upi-autopay-hover.svg);
@@ -203,6 +313,13 @@
         align-items: center;
     }
 
+    .second-product {
+        background-image: url(./../images/bg/second-product/triangle-bg.svg);
+        background-position: top left;
+        background-size: 700px 700px;
+        background-repeat: no-repeat;
+    }
+
     .second-product__card-deck {
         flex-direction: column;
         align-items: center;
@@ -216,5 +333,23 @@
 
     .product-card:hover {
         background: #fff;
+    }
+
+    .third-product {
+        background: none;
+    }
+
+    .third-product__card-deck {
+        margin: 20px auto;
+        width: 100%;
+        max-width: 1032px;
+        display: grid;
+        grid-gap: 0;
+        grid-template-columns: 40%;
+        justify-content: center;
+    }
+
+    .third-product__card-deck .card {
+        box-shadow: none;
     }
 }
