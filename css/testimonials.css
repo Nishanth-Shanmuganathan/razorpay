@@ -30,15 +30,13 @@
     top: 250px;
     border: none;
     border-radius: 100%;
-    background-color: #2cc4fb42;
+    background-color: #a8e8ff42;
     transition: all 200ms;
 }
 
 .corousel .next-btn:hover,
-.corousel .prev-btn:hover,
-.corousel .next-btn:active,
-.corousel .prev-btn:active {
-    background-color: #2cc4fb8a;
+.corousel .prev-btn:hover {
+    background-color: #7eddff8a;
 }
 
 .corousel .prev-btn {
