@@ -31,3 +31,34 @@ var x = setInterval(function () {
         document.getElementById("second").innerHTML = 0;
     }
 }, 1000);
+const corouselItems = document.getElementsByClassName("corousel-item");
+function prev() {
+    const elem = document.getElementById("active");
+    let prevEle;
+    if (elem.previousElementSibling.className === "corousel-item") {
+        prevEle = elem.previousElementSibling;
+    } else {
+        prevEle = corouselItems[corouselItems.length - 1];
+    }
+    prevEle.id = "active";
+    prevEle.classList.add("right-slide");
+    elem.removeAttribute("id");
+    setTimeout(() => {
+        prevEle.classList.remove("right-slide");
+    }, 500);
+}
+function next() {
+    const elem = document.getElementById("active");
+    let nextElem;
+    if (elem.nextElementSibling?.className === "corousel-item") {
+        nextElem = elem.nextElementSibling;
+    } else {
+        nextElem = corouselItems[0];
+    }
+    nextElem.id = "active";
+    nextElem.classList.add("left-slide");
+    elem.removeAttribute("id");
+    setTimeout(() => {
+        nextElem.classList.remove("left-slide");
+    }, 500);
+}
