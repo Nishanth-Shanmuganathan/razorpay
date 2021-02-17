@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="./css/feature.css" />
         <link rel="stylesheet" href="./css/client.css" />
         <link rel="stylesheet" href="./css/signup.css" />
+        <link rel="stylesheet" href="./css/footer.css" />
         <link rel="stylesheet" href="./css/ad.css" />
         <script src="./js/timer.js"></script>
     </head>
@@ -34,18 +35,22 @@
                         class="nav__logo--image"
                     />
                 </a>
-                <span class="nav__item desktop-view">Products</span>
-                <span class="nav__item desktop-view">Develop</span>
-                <span class="nav__item desktop-view">Resources</span>
-                <span class="nav__item desktop-view">Support</span>
-                <span class="nav__item desktop-view">Pricing</span>
+                <div class="nav__item desktop-view">Products</div>
+                <div class="nav__item desktop-view">Develop</div>
+                <div class="nav__item desktop-view">Resources</div>
+                <div class="nav__item desktop-view">Support</div>
+                <div class="nav__item desktop-view">Pricing</div>
                 <div class="nav__item nav__item--highlighted desktop-view">
-                    <span class="nav__item--highlighted__dot"></span>
+                    <div class="nav__item--highlighted__dot"></div>
                     We're hiring!
                 </div>
+                <img
+                    src="./images/icons/india.png"
+                    class="nav__item nav__item--flag desktop-view"
+                />
                 <div class="nav__item mobile-view">
                     <div class="nav__item nav__item--highlighted">
-                        <span class="nav__item--highlighted__dot"></span>
+                        <div class="nav__item--highlighted__dot"></div>
                         We're hiring!
                     </div>
                     <div class="menu-icon">
@@ -73,15 +78,15 @@
                         </svg>
                     </div>
                 </div>
-                <span class="nav__item desktop-view">Log In</span>
-                <span class="nav__item nav__item--btn desktop-view"
-                    >Sign Up
+                <div class="nav__item desktop-view">Log In</div>
+                <div class="nav__item nav__item--btn desktop-view">
+                    Sign Up
                     <img
                         class="nav__item--btn__arrow"
                         src="./images/icons/right-arrow.png"
                         alt=""
                     />
-                </span>
+                </div>
             </div>
             <div class="banner__container">
                 <div class="banner__container__content">
@@ -266,7 +271,11 @@
                             src="./images/icons/third-product/paymentpages.svg"
                             alt="payment pages"
                         />
-                        <h3>Payment Pages</h3>
+                        <h3>
+                            Payment Pages
+
+                            <span class="chip">V2.0</span>
+                        </h3>
                         <p>
                             Create custom pages with automated receipts to start
                             accepting payments instantly
@@ -531,70 +540,221 @@
                 />
             </div>
         </div>
-        <div class="signup-container">
-            <!-- <svg
-                class="signup-container-bg"
-                viewBox="0 0 1665 564"
-                preserveAspectRatio="none"
-            >
-                <defs>
-                    <linearGradient
-                        x1="-18.3420118%"
-                        y1="24.122224%"
-                        x2="111.65494%"
-                        y2="-8.2958821%"
-                        id="bottomGradient-1"
-                    >
-                        <stop stop-color="#0041B1" offset="0%"></stop>
-                        <stop stop-color="#7EDEFF" offset="100%"></stop>
-                    </linearGradient>
-                    <linearGradient
-                        x1="75.6285722%"
-                        y1="-10.2668883%"
-                        x2="11.5003613%"
-                        y2="90.401303%"
-                        id="bottomGradient-2"
-                    >
-                        <stop stop-color="#E9F1FF" offset="0%"></stop>
-                        <stop stop-color="#EEF9FE" offset="100%"></stop>
-                    </linearGradient>
-                </defs>
-                <polygon
-                    fill="#F4F8FF"
-                    transform="translate(832.500000, 316.000000) scale(-1, -1) translate(-832.500000, -316.000000)"
-                    points="0 400 1665 400 1665 365.491263 117.611298 564 0 494.825616"
-                ></polygon>
-                <path
-                    fill="url(#bottomGradient-1)"
-                    d="M1665,542.558298 L1665,214.293036 L1436.72423,184.912911 L0,0 L0,607.21087 L0,532.463904 L1547.3887,334 L1665,403.158761 L1665,542.558298 Z"
-                ></path>
-            </svg> -->
-            <img
-                class="signup-container-bg"
-                src="./images/bg/signup/footer-signup-bg.svg"
-                alt=""
-            />
-            <div class="signup__heading">
-                <h2>Supercharge your business with Razorpay</h2>
-                <div class="underscore"></div>
-                <p>
-                    Sign up now to experience the future of payments and offer
-                    your customers the best checkout experience.
-                </p>
-                <ul>
-                    <li>Quick Onboarding</li>
-                    <li>Access to entire product suite</li>
-                    <li>API access</li>
-                    <li>24x7 support</li>
-                </ul>
-                <span class="signup--btn">
-                    Sign Up
+        <div class="signup">
+            <div class="signup-container">
+                <img
+                    class="signup-container-bg"
+                    src="./images/bg/signup/footer-signup-bg.svg"
+                    alt=""
+                />
+                <div class="signup__heading">
+                    <h2>Supercharge your business with Razorpay</h2>
+                    <div class="underscore"></div>
+                    <p>
+                        Sign up now to experience the future of payments and
+                        offer your customers the best checkout experience.
+                    </p>
+                    <ul>
+                        <li>Quick Onboarding</li>
+                        <li>Access to entire product suite</li>
+                        <li>API access</li>
+                        <li>24x7 support</li>
+                    </ul>
+                    <span class="signup--btn">
+                        Sign Up
+                        <img
+                            class="signup--btn__arrow"
+                            src="./images/icons/right-arrow.png"
+                            alt=""
+                        />
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer__container">
+                <div class="footer__container--section section-1">
                     <img
-                        class="signup--btn__arrow"
-                        src="./images/icons/right-arrow.png"
-                        alt=""
+                        class="logo"
+                        src="./images/logo/razorpay-logo.svg"
+                        alt="razorpay"
                     />
-                </span>
+                    <div class="content">
+                        <p>
+                            Razorpay is the only payments solution in India that
+                            allows businesses to accept, process and disburse
+                            payments with its product suite. It gives you access
+                            to all payment modes including credit card, debit
+                            card, netbanking, UPI and popular wallets including
+                            JioMoney, Mobikwik, Airtel Money, FreeCharge, Ola
+                            Money and PayZapp.
+                        </p>
+                        <p>
+                            Razorpay’s business banking arm, RazorpayX, brings
+                            effectiveness, efficiency and excellence to all
+                            financial processes. With RazorpayX, businesses can
+                            get access to fully-functional current accounts,
+                            supercharge their payouts and automate payroll
+                            compliance.
+                        </p>
+                        <p>
+                            Manage your marketplace, automate bank transfers,
+                            collect recurring payments, share invoices with
+                            customers and avail working capital loans - all from
+                            a single platform. Fast forward your business with
+                            Razorpay.
+                        </p>
+                    </div>
+                    <p class="footer__heading">Subscribe to our newsletter</p>
+                    <div class="input-container">
+                        <input type="text" placeholder="Your email address" />
+                        <button class="subscribe--btn">
+                            Subscribe
+                            <img
+                                class="subscribe--btn__arrow"
+                                src="./images/icons/right-arrow.png"
+                                alt=""
+                            />
+                        </button>
+                    </div>
+                    <div class="image-container">
+                        <img src="./images/icons/footer/pcidss.svg" alt="" />
+                        <img
+                            src="./images/icons/footer/ISO_27001_logo.gif"
+                            alt=""
+                        />
+                    </div>
+                </div>
+                <div class="footer__container--section section-2">
+                    <ul class="list">
+                        <li>Banking</li>
+                        <li>RazorpayX</li>
+                        <li>Current Accounts</li>
+                        <li>Payouts</li>
+                        <li>Payout Links</li>
+                        <li>Corporate Credit Card</li>
+                    </ul>
+                    <ul class="list">
+                        <li>Lending</li>
+                        <li>Razorpay Capital</li>
+                        <li>Instant Settlements</li>
+                        <li>Working Capital Loans</li>
+                    </ul>
+
+                    <ul class="list">
+                        <li>Risk & fraud</li>
+                        <li>Thirdwatch</li>
+                        <li>
+                            PrePay CoD
+                            <span class="chip">NEW</span>
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <li>Refer & Earn</li>
+                        <li>Partners</li>
+                    </ul>
+                    <ul class="list">
+                        <li>More</li>
+                        <li>Route</li>
+                        <li>Invoices</li>
+                        <li>Freelancer Payments</li>
+                        <li>International</li>
+                        <li>Flash Checkout</li>
+                        <li>UPI</li>
+                        <li>BharatQR</li>
+                        <li>ePOS</li>
+                        <li>Checkout Demo</li>
+                        <li>RazorpayX Payroll</li>
+                    </ul>
+                </div>
+                <div class="footer__container--section section-3">
+                    <ul class="list">
+                        <li>Accept Payments</li>
+                        <li>Payment Gateway</li>
+                        <li>Payment Pages</li>
+                        <li>Payment Links</li>
+                        <li>Subscriptions</li>
+                        <li>Smart Collect</li>
+                    </ul>
+                    <ul class="list">
+                        <li>Developers</li>
+                        <li>Docs</li>
+                        <li>Integrations</li>
+                        <li>API Reference</li>
+                    </ul>
+                    <ul class="list">
+                        <li>Resources</li>
+                        <li>Blog</li>
+                        <li>Customer Stories</li>
+                        <li>Events</li>
+                        <li>Chargeback Guide</li>
+                        <li>Settlement Guide</li>
+                    </ul>
+                    <ul class="list">
+                        <li>Solutions</li>
+                        <li>Education</li>
+                        <li>E-commerce</li>
+                        <li>SaaS</li>
+                        <li>BFSI</li>
+                    </ul>
+                </div>
+                <div class="footer__container--section section-4">
+                    <ul class="list">
+                        <li>Company</li>
+                        <li>About Us</li>
+                        <li>
+                            Careers
+                            <span class="chip"><b>We're hiring!</b></span>
+                        </li>
+                        <li>T&C</li>
+                        <li>Privacy</li>
+                        <li>Responsible Disclosure</li>
+                        <li>Partners</li>
+                        <li>White papers</li>
+                    </ul>
+                    <ul class="list">
+                        <li>Help & Support</li>
+                        <li>Support</li>
+                        <li>Knowledge Base</li>
+                    </ul>
+                    <ul class="list">
+                        <li>Find us online</li>
+                        <li>
+                            <img
+                                src="./images/icons/footer/facebook.svg"
+                                class="social"
+                                alt=""
+                            />
+                            <img
+                                src="./images/icons/footer/twitter.svg"
+                                class="social"
+                                alt=""
+                            />
+                            <img
+                                src="./images/icons/footer/instagram.svg"
+                                class="social"
+                                alt=""
+                            />
+                            <img
+                                src="./images/icons/footer/github.svg"
+                                class="social"
+                                alt=""
+                            />
+                            <img
+                                src="./images/icons/footer/linkedin.svg"
+                                class="social"
+                                alt=""
+                            />
+                        </li>
+                        <li><small>© Razorpay 2021</small></li>
+                        <li><small>All Rights Reseerved</small></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer--bottom-text">
+                <span>This site is protected by reCAPTCHA and the Google</span>
+                <a href="#">Privacy Policy</a> <span>and</span>
+                <a href="#">Terms of Service</a> <span>apply</span>
             </div>
         </div>
         <div class="ad">
@@ -624,6 +784,9 @@
             </p>
             <p class="ad__text mobile-view">Unlock 0% pricing</p>
             <button class="ad__nav">Start Free Trial</button>
+        </div>
+        <div class="customer-support">
+            <img src="./images/icons/chat.png" alt="customer support" />
         </div>
     </body>
 </html>

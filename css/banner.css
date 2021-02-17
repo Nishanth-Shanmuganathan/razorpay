@@ -48,6 +48,7 @@ body {
 
 
 .nav__item--highlighted {
+    display: inline-flex;
     background: linear-gradient(#ffffff08,
             #ffffff1c);
     transition: border 300ms, margin 300ms;
@@ -63,7 +64,8 @@ body {
 }
 
 .nav__item--btn,
-.signup--btn {
+.signup--btn,
+.subscribe--btn {
     background-color: whitesmoke;
     color: #2783f3;
     border: none;
@@ -72,10 +74,17 @@ body {
 }
 
 .nav__item--btn__arrow,
-.signup--btn__arrow {
+.signup--btn__arrow,
+.subscribe--btn__arrow {
     margin: 5px 0 0 5px;
     width: 10px;
     height: 10px;
+}
+
+.nav__item--flag {
+    padding: 0 0 0 10px;
+    width: 45px;
+    height: 30px;
 }
 
 .banner__container {
@@ -179,4 +188,14 @@ body {
         cursor: pointer;
         transform: translateY(20%);
     }
+}
+
+.chip {
+    padding: 2px 5px;
+    display: inline;
+    color: white;
+    font-size: 11px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5FCB74;
 }
