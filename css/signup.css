@@ -1,0 +1,63 @@
+.signup-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url(./../images/bg/signup/footer-signup.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+}
+
+.signup-container-bg {
+    max-width: 100vw;
+    height: 700px;
+    z-index: -5;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.signup__heading {
+    padding: 150px 50px 50px 50px;
+    z-index: 5;
+    color: white;
+}
+
+.signup__heading p {
+    width: 100%;
+    max-width: 500px;
+    line-height: 1.5;
+}
+
+.signup__heading ul {
+    margin-bottom: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.signup__heading ul li {
+    padding: 15px;
+    display: inline;
+}
+
+
+.signup--btn {
+    display: inline-block;
+    padding: 15px;
+}
+
+@media (max-width:1023px) {
+    .signup-container {
+        background-image: none;
+
+    }
+
+    .signup__heading {
+        padding-top: 200px;
+    }
+}
+
+@media (max-width:743px) {
+    .signup__heading {
+        padding-top: 200px;
+    }
+}

@@ -62,7 +62,8 @@ body {
     align-self: center;
 }
 
-.nav__item--btn {
+.nav__item--btn,
+.signup--btn {
     background-color: whitesmoke;
     color: #2783f3;
     border: none;
@@ -70,7 +71,8 @@ body {
     border-radius: 3px;
 }
 
-.nav__item--btn__arrow {
+.nav__item--btn__arrow,
+.signup--btn__arrow {
     margin: 5px 0 0 5px;
     width: 10px;
     height: 10px;

@@ -7,6 +7,7 @@
 
 .client-container .client__heading,
 .client-container .client__details {
+    width: 50%;
     padding: 50px;
 }
 
@@ -23,8 +24,9 @@
 }
 
 .client__details {
-    min-width: 500px;
+    width: 500px;
     min-height: 500px;
+    max-width: 90vw;
     position: relative;
     overflow: hidden;
 }
@@ -43,7 +45,7 @@
 .client__details img {
     position: absolute;
     width: 500px;
-
+    max-width: 90vw;
     height: 1314px;
     animation: scrollUp 30s linear infinite;
 }
@@ -62,14 +64,21 @@
 @media (max-width:1023px) {
     .client-container {
         margin-top: -150px;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 @media (max-width:743px) {
+    .client-container .client__details {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .client-container {
         padding: 0px 10px;
-        flex-direction: column;
         margin-top: -250px;
+        align-items: center;
     }
 
 

@@ -29,8 +29,10 @@
 }
 
 .feature__card-deck {
+    margin: auto;
     padding: 20px;
     width: 100%;
+    max-width: 1023px;
     height: fit-content;
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -67,10 +69,17 @@
 
 @media (max-width:743px) {
     .feature-container {
-        height: 2500px;
+        height: 2550px;
     }
 
     .feature__card-deck {
         grid-template-columns: auto;
     }
+}
+
+@media (max-width:403px) {
+    .feature-container {
+        height: 2800px;
+    }
+
 }
