@@ -95,7 +95,9 @@ body {
 
 .nav__item-sub--lists ul,
 .nav__item-sub--lists .detailed-list,
-.nav__item-sub--lists .list {
+.nav__item-sub--lists .list,
+.side-nav__list--detailed-list,
+.side-nav__list--small {
 
     list-style: none;
     color: #3a415c;
@@ -107,6 +109,7 @@ body {
 }
 
 .detailed-list--title,
+.side-nav__list--detailed-list--title,
 .list--title {
     text-transform: uppercase;
     font-size: 12px;
@@ -118,7 +121,8 @@ body {
     margin: 15px;
 }
 
-.nav__item-sub--lists .detailed-list li {
+.nav__item-sub--lists .detailed-list li,
+.side-nav__list--detailed-list li {
     padding: 15px 15px 15px 40px;
     max-width: 315px;
     background-repeat: no-repeat;
@@ -126,7 +130,8 @@ body {
     background-size: 30px 30px;
 }
 
-.nav__item-sub--lists .detailed-list li .title {
+.nav__item-sub--lists .detailed-list li .title,
+.side-nav__list--detailed-list li .title {
     font-weight: bold;
 }
 
@@ -143,7 +148,8 @@ body {
 
 }
 
-.nav__item--highlighted__dot {
+.nav__item--highlighted__dot,
+.points {
     width: 10px;
     height: 10px;
     margin-right: 5px;

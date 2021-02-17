@@ -365,7 +365,7 @@
                         <div class="nav__item--highlighted__dot"></div>
                         We're hiring!
                     </div>
-                    <div class="menu-icon">
+                    <div class="menu-icon" onclick="openModal()">
                         <svg viewBox="0 0 100 80" width="20" height="20">
                             <rect
                                 width="100"
@@ -858,6 +858,20 @@
                 <div class="underscore"></div>
             </div>
             <div class="testimonials__slider">
+                <div class="testimonials__slider--control">
+                    <div
+                        class="points"
+                        onclick="jumpTo(0)"
+                        id="activeDot"
+                        name="0"
+                    ></div>
+                    <div class="points" name="1" onclick="jumpTo(1)"></div>
+                    <div class="points" name="2" onclick="jumpTo(2)"></div>
+                    <div class="points" name="3" onclick="jumpTo(3)"></div>
+                    <div class="points" name="4" onclick="jumpTo(4)"></div>
+                    <div class="points" name="5" onclick="jumpTo(5)"></div>
+                    <div class="points" name="6" onclick="jumpTo(6)"></div>
+                </div>
                 <div class="corousel">
                     <img
                         class="next-btn"
@@ -1268,6 +1282,9 @@
                 <a href="#">Terms of Service</a> <span>apply</span>
             </div>
         </div>
+        <div class="customer-support">
+            <img src="./images/icons/chat.png" alt="customer support" />
+        </div>
         <div class="ad">
             <div class="ad__timer desktop-view">
                 <div class="ad__timer--cover">
@@ -1296,8 +1313,256 @@
             <p class="ad__text mobile-view">Unlock 0% pricing</p>
             <button class="ad__nav">Start Free Trial</button>
         </div>
-        <div class="customer-support">
-            <img src="./images/icons/chat.png" alt="customer support" />
+        <div id="side-nav" class="side-nav">
+            <div class="side-nav__heading">
+                <p>Menu</p>
+                <img
+                    src="./images/icons/nav/close.png"
+                    alt="close"
+                    onclick="closeModal()"
+                />
+            </div>
+            <ul class="side-nav__list">
+                <li>
+                    <span>Products</span>
+                    <div class="chevron"></div>
+                </li>
+
+                <ul class="side-nav__list--detailed-list">
+                    <span class="side-nav__list--detailed-list--title"
+                        >Banking</span
+                    >
+                    <li
+                        style="
+                            background-image: url(./images/icons/nav/products/x.svg);
+                        "
+                    >
+                        <div class="title">RazorpayX</div>
+                        <div class="sub-title">
+                            Xperience the future of banking
+                        </div>
+                    </li>
+                    <li
+                        style="
+                            background-image: url(./images/icons/nav/products/capital.svg);
+                        "
+                    >
+                        <div class="title">Captial</div>
+                        <div class="sub-title">
+                            Never have a shortfall of capital
+                        </div>
+                    </li>
+                    <li
+                        style="
+                            background-image: url(./images/icons/nav/products/payout.svg);
+                        "
+                    >
+                        <div class="title">Payouts</div>
+                        <div class="sub-title">
+                            24 x 7, instant and automated payouts
+                        </div>
+                    </li>
+                    <li
+                        style="
+                            background-image: url(./images/icons/nav/products/payout-links.svg);
+                        "
+                    >
+                        <div class="title">Payout Links</div>
+                        <div class="sub-title">
+                            Payouts without bank account details
+                        </div>
+                    </li>
+                    <li
+                        style="
+                            background-image: url(./images/icons/nav/products/opfin.svg);
+                        "
+                    >
+                        <div class="title">RazorpayX Payroll</div>
+                        <div class="sub-title">
+                            Pay salary and compilance automatically
+                        </div>
+                    </li>
+
+                    <span class="side-nav__list--detailed-list--title"
+                        >Risk & fraud</span
+                    >
+                    <li
+                        style="
+                            background-image: url(./images/icons/nav/products/thirdwatch-navigation-icon.svg);
+                        "
+                    >
+                        <div class="title">Thirdwatch</div>
+                        <div class="sub-title">Fight fraud with AI</div>
+                    </li>
+                    <span class="side-nav__list--detailed-list--title"
+                        >Accept Payments</span
+                    >
+                    <li
+                        style="
+                            background-image: url(./images/icons/nav/products/payments.svg);
+                        "
+                    >
+                        <div class="title">Payment Gateway</div>
+                        <div class="sub-title">
+                            Payments on your website & app
+                        </div>
+                    </li>
+                    <li
+                        style="
+                            background-image: url(./images/icons/nav/products/paymentlinks.svg);
+                        "
+                    >
+                        <div class="title">Payment Links</div>
+                        <div class="sub-title">
+                            Create and send links to send money
+                        </div>
+                    </li>
+                    <li
+                        style="
+                            background-image: url(./images/icons/nav/products/payment-buttons.svg);
+                        "
+                    >
+                        <div class="title">
+                            Payment Button<span class="chip">New</span>
+                        </div>
+                        <div class="sub-title">
+                            Create, Copy and Collect in 5 minutes
+                        </div>
+                    </li>
+                    <li
+                        style="
+                            background-image: url(./images/icons/nav/products/paymentpages.svg);
+                        "
+                    >
+                        <div class="title">Payment Pages</div>
+                        <div class="sub-title">
+                            Get paid with personalised pages
+                        </div>
+                    </li>
+                    <li
+                        style="
+                            background-image: url(./images/icons/nav/products/subscriptions.svg);
+                        "
+                    >
+                        <div class="title">Subscriptions</div>
+                        <div class="sub-title">
+                            Collect recurring subscription payments
+                        </div>
+                    </li>
+                    <li
+                        style="
+                            background-image: url(./images/icons/nav/products/smartcollect.svg);
+                        "
+                    >
+                        <div class="title">Smart Collect</div>
+                        <div class="sub-title">
+                            AutomateNEFT , RTGS, IMPS payments
+                        </div>
+                    </li>
+                </ul>
+                <li>
+                    <span>Develop</span>
+                    <div class="chevron"></div>
+                </li>
+                <ul class="side-nav__list--detailed-list">
+                    <li
+                        style="
+                            background-image: url(./images/icons/nav/develop/docs.svg);
+                        "
+                    >
+                        <div class="title">Docs</div>
+                        <div class="sub-title">Get started with SDKs here</div>
+                    </li>
+                    <li
+                        style="
+                            background-image: url(./images/icons/nav/develop/integrations.svg);
+                        "
+                    >
+                        <div class="title">Integrations</div>
+                        <div class="sub-title">
+                            30+ Platforms that Razorpay supports
+                        </div>
+                    </li>
+                    <li
+                        style="
+                            background-image: url(./images/icons/nav/develop/api.svg);
+                        "
+                    >
+                        <div class="title">API Reference</div>
+                        <div class="sub-title">
+                            Official references for the Razorpay API
+                        </div>
+                    </li>
+                </ul>
+                <li>
+                    <span>Resources</span>
+                    <div class="chevron"></div>
+                </li>
+                <ul class="side-nav__list--small">
+                    <span class="side-nav__list--title">Company</span>
+                    <li><b>Blog</b></li>
+                    <li><b>Learn</b></li>
+                    <li><b>Customer stories </b></li>
+                    <li><b>Events</b></li>
+                    <li>
+                        <b>White papers</b>
+                    </li>
+                    <span class="side-nav__list--title">Guide</span>
+                    <li><b>Chargeback Guide</b></li>
+                    <li><b>Settlement Guide</b></li>
+                    <span class="side-nav__list--title">Solutions</span>
+                    <li><b>Education</b></li>
+                    <li><b>E-Commerce</b></li>
+                    <li><b>Saas </b></li>
+                    <li><b>BFSI</b></li>
+                </ul>
+                <li>
+                    <span>Support</span>
+                    <div class="chevron"></div>
+                </li>
+                <ul style="" class="side-nav__list--detailed-list">
+                    <li
+                        style="
+                            background-image: url(./images/icons/nav/support/icon_request.svg);
+                        "
+                    >
+                        <div class="title">Raise a request</div>
+                        <div class="sub-title">
+                            Get assistance with everything
+                        </div>
+                    </li>
+                    <li
+                        style="
+                            background-image: url(./images/icons/nav/support/icon_kb.svg);
+                        "
+                    >
+                        <div class="title">Knowledge Base</div>
+                        <div class="sub-title">
+                            Library of resources to get going
+                        </div>
+                    </li>
+                </ul>
+                <li>Pricing</li>
+                <li>Log In</li>
+                <li>Sign Up</li>
+            </ul>
         </div>
     </body>
 </html>
+
+<ul class="side-nav__list">
+    <span class="side-nav__list--title">Company</span>
+    <li><b>Blog</b></li>
+    <li><b>Learn</b></li>
+    <li><b>Customer stories </b></li>
+    <li><b>Events</b></li>
+    <li><b>White papers</b><span class="chip">New</span></li>
+    <span class="side-nav__list--title">Guide</span>
+    <li><b>Chargeback Guide</b></li>
+    <li><b>Settlement Guide</b></li>
+    <span class="side-nav__list--title">Solutions</span>
+    <li><b>Education</b></li>
+    <li><b>E-Commerce</b></li>
+    <li><b>Saas </b></li>
+    <li><b>BFSI</b></li>
+</ul>

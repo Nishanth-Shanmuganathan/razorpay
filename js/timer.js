@@ -32,6 +32,7 @@ var x = setInterval(function () {
     }
 }, 1000);
 const corouselItems = document.getElementsByClassName("corousel-item");
+const corouselDots = document.getElementsByClassName("points");
 function prev() {
     const elem = document.getElementById("active");
     let prevEle;
@@ -61,4 +62,44 @@ function next() {
     setTimeout(() => {
         nextElem.classList.remove("left-slide");
     }, 500);
+}
+function jumpTo(id) {
+    if (id >= corouselItems.length) {
+        return;
+    }
+    const elem = document.getElementById("active");
+    const dot = document.getElementById("activeDot");
+    let nextElem = corouselItems[id];
+    let nextDot = corouselDots[id];
+
+    if (elem === nextElem) {
+        return;
+    }
+    nextElem.id = "active";
+    nextDot.id = "activeDot";
+    elem.removeAttribute("id");
+    dot.removeAttribute("id");
+
+    if (dot.getAttribute("name") < nextDot.getAttribute("name")) {
+        nextElem.classList.add("left-slide");
+        setTimeout(() => {
+            nextElem.classList.remove("left-slide");
+        }, 500);
+    } else {
+        nextElem.classList.add("right-slide");
+        setTimeout(() => {
+            nextElem.classList.remove("right-slide");
+        }, 500);
+    }
+}
+
+function openModal() {
+    const modal = document.getElementById("side-nav");
+    modal.style.display = "block";
+    document.getElementsByTagName("body")[0].style.position = "fixed";
+}
+function closeModal() {
+    const modal = document.getElementById("side-nav");
+    modal.style.display = "none";
+    document.getElementsByTagName("body")[0].style.position = "static";
 }
